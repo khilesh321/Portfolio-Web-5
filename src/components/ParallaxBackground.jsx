@@ -34,7 +34,11 @@ function ParallaxBackground() {
             backgroundPosition: 'bottom',
             backgroundSize: 'cover',
             x: planetsX
-          }}>
+          }}
+            initial={{opacity: 0, y: -20}}
+            animate={{opacity:1, y:0}}
+            transition={{delay: 2, duration: .6}}
+          >
         </motion.div>
         {/* Mountain Layer 2 */}
         <motion.div className="absolute inset-0 w-full h-screen -z-20" 
