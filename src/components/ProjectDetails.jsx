@@ -13,7 +13,7 @@ function ProjectDetails({title, description, subDescription, image, tags, href, 
         >
           <img className="w-6 h-6" src="assets/close.svg" alt="close icon" />
         </button>
-        <img className="w-full rounded-t-2xl max-h-60 object-cover" src={image} alt={image} />
+        <img className="w-full rounded-t-2xl object-cover" src={image} alt={image} />
         <div className="p-5 overflow-y-auto flex-1">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 font-normal text-neutral-400">{description}</p>
