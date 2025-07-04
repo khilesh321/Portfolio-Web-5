@@ -1,4 +1,4 @@
-import { motion } from "motion/react"
+import { easeInOut, motion } from "motion/react"
 
 function ProjectDetails({title, description, subDescription, image, tags, href, setIsHidden}) {
   return (
@@ -6,7 +6,7 @@ function ProjectDetails({title, description, subDescription, image, tags, href, 
       <motion.div className="relative max-w-xl w-full max-h-[95vh] border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10 flex flex-col"
         initial={{opacity: 0, scale: .5}}
         animate={{opacity: 1, scale: 1}}
-        exit={{opacity: 0, scale: .5}}
+        transition={{duration: .35, ease: easeInOut}}
       >
         <button className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
           onClick={() => setIsHidden(false)}
