@@ -13,8 +13,8 @@ function About() {
         <div className="flex items-end relative grid-default-color grid-1">
           <img src="assets/coding-pov.png" alt="coding image" className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"/>
           <div className="z-10">
-            <p className="headtext">Hi, I'm Khilesh Jawale</p>
-            <p className="subtext">Over the last 1 year, I developed my frontend and backend dev skills to deliver dynamic Software and Web Applications</p>
+          <p className="headtext">Hi, I'm Khilesh Jawale</p>
+          <p className="subtext">Over the past year, I've built fast, scalable web apps with modern frontend and backend tools.</p>
           </div>
           <div className="absolute pointer-events-none bottom-0 left-0 w-full h-1/2 sm:h-1/4 bg-gradient-to-t from-indigo" />
         </div>
