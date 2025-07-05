@@ -2,7 +2,7 @@ import { easeInOut, motion } from "motion/react"
 
 function ProjectDetails({title, description, subDescription, image, tags, href, setIsHidden}) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm" data-lenis-prevent>
       <motion.div className="relative max-w-xl w-full max-h-[95vh] border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10 flex flex-col"
         initial={{opacity: 0, scale: .5}}
         animate={{opacity: 1, scale: 1}}

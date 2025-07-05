@@ -15,6 +15,7 @@ export default function LenisWrapper({ children }) {
         lenis.raf(time);
         requestAnimationFrame(raf);
       }
+      window.lenis = lenis;
       requestAnimationFrame(raf);
       // Recalculate scroll limits on resize/content changes
       const resizeObserver = new ResizeObserver(() => lenis.resize());

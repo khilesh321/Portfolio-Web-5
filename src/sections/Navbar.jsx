@@ -8,7 +8,8 @@ function Navigation(){
     const target = document.getElementById(id);
     if (window.lenis && target) {
       window.lenis.scrollTo(target, { offset: -60 }); // adjust offset for fixed navbar
-    } else if (target) {
+    }
+    else if (target) {
       target.scrollIntoView({ behavior: 'smooth' });
     }
   };
@@ -29,7 +30,7 @@ const Navbar = () => {
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a href="/" className="py-3">
-            <img src='assets\header_logo.png' alt="Header Image Logo" className="h-8 sm:h-10"/>
+            <img src='assets/header_logo.png' alt="Header Image Logo" className="h-8 sm:h-10"/>
           </a>
           <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden">
             <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className="h-6 w-6" />
