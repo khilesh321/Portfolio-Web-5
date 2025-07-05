@@ -55,13 +55,24 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative flex items-center c-space section-spacing">
-      <Particles
+      {/* Commented out Particles component */}
+      {/* <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
         ease={80}
         color={"#ffffff"}
         refresh
-      />
+      /> */}
+      <div
+        className="absolute inset-0 -z-50"
+        style={{
+          backgroundImage: `url('assets/particles-bg.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.3,
+        }}
+      ></div>
       <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
@@ -154,7 +165,7 @@ const Contact = () => {
               {state.submitting ? (
                 <motion.p
                   className="flex items-center justify-center gap-2"
-                initial={{ opacity: 0, y: -10 }}
+                  initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                 >
