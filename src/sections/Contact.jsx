@@ -4,7 +4,7 @@ import { Particles } from "../components/Particles";
 import {AnimatePresence, motion} from 'motion/react'
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xldnvqdo");
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_KEY);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
         <form className="w-full" onSubmit={handleSubmit} method="POST">
           <div className="mb-5">
-            <label htmlFor="name" className="feild-label">
+            <label htmlFor="name" className="field-label">
               Full Name
             </label>
             <input
@@ -51,7 +51,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="email" className="feild-label">
+            <label htmlFor="email" className="field-label">
               Email
             </label>
             <input
@@ -72,7 +72,7 @@ const Contact = () => {
             />
           </div>
           <div className="mb-5">
-            <label htmlFor="message" className="feild-label">
+            <label htmlFor="message" className="field-label">
               Message
             </label>
             <textarea
@@ -93,8 +93,8 @@ const Contact = () => {
               errors={state.errors}
             />
           </div>
-          {state.succeeded && <motion.p initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} className="m-2 text-md py-1 px-2 text-center bg-green-200 text-green-800 rounded-md ">Thanks for submitting</motion.p>}
-          {state.errors && <motion.p initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} className="m-2 text-md py-1 px-2 text-center bg-red-200 text-red-800 rounded-md">*Error while submitting</motion.p>}
+          {state.succeeded && <motion.p initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} className="m-2 text-md py-1 px-2 text-center bg-green-200 text-green-800 rounded-md ">Thanks for Submitting!</motion.p>}
+          {state.errors && <motion.p initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} className="m-2 text-md py-1 px-2 text-center bg-red-200 text-red-800 rounded-md">*Error while Submitting</motion.p>}
           
           <button
             type="submit"
