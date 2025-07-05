@@ -2,12 +2,22 @@ import { useState } from "react"
 import { motion } from "motion/react"
 
 function Navigation(){
+  // Smooth scroll handler for nav links
+  const handleNavClick = (e, id) => {
+    e.preventDefault();
+    const target = document.getElementById(id);
+    if (window.lenis && target) {
+      window.lenis.scrollTo(target, { offset: -60 }); // adjust offset for fixed navbar
+    } else if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return <>
     <ul className="nav-ul">
-      <li className="nav-li"><a href="#home" className="nav-link">Home</a></li>
-      <li className="nav-li"><a href="#about" className="nav-link">About</a></li>
-      <li className="nav-li"><a href="#work" className="nav-link">Work</a></li>
-      <li className="nav-li"><a href="#contact" className="nav-link">Contact</a></li>
+      <li className="nav-li"><a href="#home" className="nav-link" onClick={e => handleNavClick(e, 'home')}>Home</a></li>
+      <li className="nav-li"><a href="#about" className="nav-link" onClick={e => handleNavClick(e, 'about')}>About</a></li>
+      <li className="nav-li"><a href="#work" className="nav-link" onClick={e => handleNavClick(e, 'work')}>Work</a></li>
+      <li className="nav-li"><a href="#contact" className="nav-link" onClick={e => handleNavClick(e, 'contact')}>Contact</a></li>
     </ul>
   </>
 }

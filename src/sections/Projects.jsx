@@ -10,7 +10,7 @@ function Projects() {
   const springY = useSpring(y, {damping: 10, stiffness: 50});
   const [preview, setPreview] = useState(null)
   return (
-    <section className="relative c-space section-spacing"
+    <section id="work" className="relative c-space section-spacing"
       onMouseMove={e => {
         x.set(e.clientX + 30)
         y.set(e.clientY - 50)
