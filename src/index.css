@@ -167,3 +167,49 @@ body.lenis {
   transition-duration: 1ms;
   transition-behavior: allow-discrete;
 }
+
+/* Theme Toggle Styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="light"] body {
+  background: #ffffff !important;
+  color: #1f2937 !important;
+}
+
+[data-theme="light"] .grid-default-color {
+  @apply bg-gradient-to-b from-slate-100 to-slate-200;
+}
+
+[data-theme="light"] .grid-special-color {
+  @apply bg-gradient-to-b from-purple-100 to-indigo-200;
+}
+
+[data-theme="light"] .grid-black-color {
+  @apply bg-gradient-to-tl from-slate-200 via-gray-100 to-slate-200;
+}
+
+[data-theme="light"] .subtext {
+  @apply text-neutral-600;
+}
+
+[data-theme="light"] .nav-li {
+  @apply text-neutral-600 hover:text-neutral-900;
+}
+
+[data-theme="light"] .nav-link {
+  @apply hover:text-neutral-900;
+}
+
+[data-theme="light"] .field-input {
+  @apply bg-black/5 border-black/20 text-neutral-900 placeholder-neutral-500;
+}
+
+[data-theme="light"] .field-input-focus {
+  @apply focus-visible:ring-black/20;
+}
+
+[data-theme="light"] .btn {
+  @apply bg-slate-100 text-neutral-900;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { motion } from "motion/react"
+import ThemeToggle from "../components/ThemeToggle"
 
 function Navigation({ onLinkClick }){
   // Smooth scroll handler for nav links
@@ -35,12 +36,15 @@ const Navbar = () => {
           <a href="/" className="py-3">
             <img src='assets/header_logo.png' alt="Header Image Logo" className="h-8 sm:h-10"/>
           </a>
-          <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden">
-            <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className="h-6 w-6" />
-          </button>
-          <nav className="hidden sm:flex">
-            <Navigation />
-          </nav>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden">
+              <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className="h-6 w-6" />
+            </button>
+            <nav className="hidden sm:flex">
+              <Navigation />
+            </nav>
+          </div>
         </div>
       </div>
       {isOpen && <motion.div className="block overflow-hidden text-center sm:hidden"
