@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion } from "motion/react"
 
-function Navigation(){
+function Navigation({ onLinkClick }){
   // Smooth scroll handler for nav links
   const handleNavClick = (e, id) => {
     e.preventDefault();
@@ -11,6 +11,9 @@ function Navigation(){
     }
     else if (target) {
       target.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (onLinkClick) {
+      onLinkClick();
     }
   };
   return <>
@@ -26,7 +29,7 @@ function Navigation(){
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
+    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40" style={{ backdropFilter: 'blur(12px)' }}>
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a href="/" className="py-3">
@@ -46,7 +49,7 @@ const Navbar = () => {
         transition={{duration: 1}}
         style={{maxHeight: '100vh'}}
       >
-        <nav className="pb-5"><Navigation /></nav>
+        <nav className="pb-5"><Navigation onLinkClick={() => setIsOpen(false)}/></nav>
       </motion.div>}
     </div>
   )

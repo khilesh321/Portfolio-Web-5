@@ -18,8 +18,8 @@ const Hero = () => {
             <Float>
               <Astronaut scale={isMobile && 0.23} position={isMobile && [0, -1.5, 0]} />
             </Float>
-            <OrbitControls enableZoom={false} />
-            <Rig />
+            {!isMobile && <OrbitControls enableZoom={false} />}
+            <Rig isMobile={isMobile} />
           </Suspense>
         </Canvas>
       </figure>
@@ -27,11 +27,13 @@ const Hero = () => {
   )
 }
 
-function Rig(){
-  useFrame((state, delta) => {
-  easing.damp3(state.camera.position, [state.mouse.x / 4, state.mouse.y / 4 + 1, 3], .5, delta)
-  })
-  return null
-}
 
+function Rig({ isMobile }){
+  useFrame((state, delta) => {
+    if (!isMobile) {
+      easing.damp3(state.camera.position, [state.mouse.x / 4, state.mouse.y / 4 + 1, 3], .5, delta);
+    }
+  });
+  return null;
+}
 export default Hero
