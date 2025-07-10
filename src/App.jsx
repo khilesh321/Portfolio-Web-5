@@ -7,20 +7,23 @@ import Hero from './sections/Hero'
 import Navbar from './sections/Navbar'
 import Projects from './sections/Projects'
 import Testimonial from './sections/Testimonial'
+import WebsiteLoader from './components/WebsiteLoader'
 
 const App = () => {
   return (
-    <div className='container mx-auto max-w-7xl'>
-      <Navbar />
-      <Hero />
-      <ParallaxBackground />
-      <About />
-      <Projects />
-      <Experiences />
-      {/* <Testimonial /> */}
-      <Contact />
-      <Footer />
-    </div>
+    <WebsiteLoader>
+      <div className='container mx-auto max-w-7xl'>
+        <Navbar />
+        <Hero />
+        <ParallaxBackground />
+        <About />
+        <Projects />
+        <Experiences />
+        {/* <Testimonial /> */}
+        <Contact />
+        <Footer />
+      </div>
+    </WebsiteLoader>
   )
 }
 
