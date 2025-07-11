@@ -1,6 +1,6 @@
 import Project from "../components/Project"
 import { myProjects } from "../constants"
-import {motion, useSpring, useMotionValue} from 'motion/react'
+import {motion, useSpring, useMotionValue, AnimatePresence} from 'motion/react'
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -21,10 +21,23 @@ function Projects() {
       <h2 className="text-heading">My Selected Projects</h2>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"></div>
       {myProjects.map(project => <Project key={project.id} {...project} setPreview={setPreview}/>)}
-      {preview && !isSmallScreen && <motion.img className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg ring-2 ring-neutral-500 pointer-events-none"
-        style={{x: springX, y: springY}}
-        src={preview}
-      />}
+      <AnimatePresence>
+        {preview && !isSmallScreen && (
+          <motion.img 
+            className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg ring-2 ring-neutral-500 pointer-events-none"
+            style={{x: springX, y: springY}}
+            src={preview}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ 
+              duration: 0.3, 
+              ease: "easeOut",
+              scale: { type: "spring", damping: 15, stiffness: 300 }
+            }}
+          />
+        )}
+      </AnimatePresence>
     </section>
   )
 }
