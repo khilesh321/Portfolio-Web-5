@@ -27,7 +27,7 @@ const WebsiteLoader = ({ children }) => {
           return new Promise((resolve, reject) => {
             const img = new Image();
             img.onload = () => {
-              setProgress(20 + ((index + 1) / myProjects.length) * 40);
+              setProgress(prev => Math.max(prev, 20 + ((index + 1) / myProjects.length) * 40));
               resolve();
             };
             img.onerror = reject;
@@ -51,10 +51,10 @@ const WebsiteLoader = ({ children }) => {
         const assetPromises = criticalAssets.map((asset, index) => {
           return new Promise((resolve) => {
             const img = new Image();
-            img.onload = () => {
-              setProgress(60 + ((index + 1) / criticalAssets.length) * 25);
-              resolve();
-            };
+img.onload = () => {
+  setProgress(prev => Math.max(prev, 60 + ((index + 1) / criticalAssets.length) * 25));
+  resolve();
+};
             img.onerror = resolve; // Continue even if some assets fail
             img.src = asset;
           });
