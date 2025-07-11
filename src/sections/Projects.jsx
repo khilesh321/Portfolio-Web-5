@@ -21,19 +21,20 @@ function Projects() {
       <h2 className="text-heading">My Selected Projects</h2>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"></div>
       {myProjects.map(project => <Project key={project.id} {...project} setPreview={setPreview}/>)}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {preview && !isSmallScreen && (
           <motion.img 
+            key={preview}
             className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg ring-2 ring-neutral-500 pointer-events-none"
             style={{x: springX, y: springY}}
             src={preview}
+            alt="preview image"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ 
-              duration: 0.3, 
-              ease: "easeOut",
-              scale: { type: "spring", damping: 15, stiffness: 300 }
+              duration: 0.2, 
+              ease: "easeInOut"
             }}
           />
         )}
