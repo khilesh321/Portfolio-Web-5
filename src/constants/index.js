@@ -1,3 +1,13 @@
+export const CRITICAL_ASSETS = [
+  '/assets/grid.png',
+  '/assets/sky.jpg',
+  '/assets/particles-bg.png',
+  '/assets/planets.png',
+  '/assets/coding-pov.png',
+  '/assets/mountain-3.png',
+  '/assets/mountain-2.png',
+  '/assets/mountain-1.png'
+];
 export const myProjects = [
   {
     id: 1,

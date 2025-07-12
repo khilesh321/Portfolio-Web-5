@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { myProjects } from '../constants';
+
+import { myProjects, CRITICAL_ASSETS } from '../constants';
 
 const WebsiteLoader = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,15 +41,7 @@ const WebsiteLoader = ({ children }) => {
 
         // Step 3: Preload other critical assets
         setLoadingText('Loading assets...');
-        const criticalAssets = [
-          '/assets/grid.png',
-          '/assets/sky.jpg',
-          '/assets/particles-bg.png',
-          '/assets/planets.png',
-          '/assets/coding-pov.png'
-        ];
-
-        const assetPromises = criticalAssets.map((asset, index) => {
+        const assetPromises = CRITICAL_ASSETS.map((asset, index) => {
           return new Promise((resolve) => {
             const img = new Image();
 img.onload = () => {
