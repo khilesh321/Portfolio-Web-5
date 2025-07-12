@@ -13,7 +13,7 @@ function ParallaxBackground() {
         {/* Background Sky */}
         <div className="absolute inset-0 w-full h-screen -z-50" 
           style={{
-            backgroundImage: 'url(/assets/sky.jpg)',
+            backgroundImage: "url('https://res.cloudinary.com/dna4sajpg/image/upload/v1752327130/portfolio_projects/rko34uiizzdgag5rhken.jpg')",
             backgroundPosition: 'bottom',
             backgroundSize: 'cover'
           }}>
@@ -21,7 +21,7 @@ function ParallaxBackground() {
         {/* Mountain Layer */}
         <motion.div className="absolute inset-0 w-full h-screen -z-40" 
           style={{
-            backgroundImage: 'url(/assets/mountain-3.png)',
+            backgroundImage: "url('https://res.cloudinary.com/dna4sajpg/image/upload/v1752327122/portfolio_projects/naqioteif47haqiiwztc.png')",
             backgroundPosition: 'bottom',
             backgroundSize: 'cover',
             y: mountain3Y
@@ -30,7 +30,7 @@ function ParallaxBackground() {
         {/* Planets */}
         <motion.div className="absolute inset-0 w-full h-screen -z-30" 
           style={{
-            backgroundImage: 'url(/assets/planets.png)',
+            backgroundImage: "url('https://res.cloudinary.com/dna4sajpg/image/upload/v1752327125/portfolio_projects/rneot917hccnukrgnwjc.png')",
             backgroundPosition: 'bottom',
             backgroundSize: 'cover',
             x: planetsX
@@ -43,7 +43,7 @@ function ParallaxBackground() {
         {/* Mountain Layer 2 */}
         <motion.div className="absolute inset-0 w-full h-screen -z-20" 
           style={{
-            backgroundImage: 'url(/assets/mountain-2.png)',
+            backgroundImage: "url('https://res.cloudinary.com/dna4sajpg/image/upload/v1752327115/portfolio_projects/ftmjcmr7usgc3auakzxn.png')",
             backgroundPosition: 'bottom',
             backgroundSize: 'cover',
             y: mountain2Y
@@ -52,7 +52,7 @@ function ParallaxBackground() {
         {/* Mountain Layer 1 */}
         <motion.div className="absolute inset-0 w-full h-screen -z-10" 
           style={{
-            backgroundImage: 'url(/assets/mountain-1.png)',
+            backgroundImage: "url('https://res.cloudinary.com/dna4sajpg/image/upload/v1752327108/portfolio_projects/nfqi6tjrkz57fszzzv4r.png')",
             backgroundPosition: 'bottom',
             backgroundSize: 'cover',
             y: mountain1Y

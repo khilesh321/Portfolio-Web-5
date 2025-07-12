@@ -1,12 +1,12 @@
 export const CRITICAL_ASSETS = [
-  '/assets/grid.png',
-  '/assets/sky.jpg',
-  '/assets/particles-bg.png',
-  '/assets/planets.png',
-  '/assets/coding-pov.png',
-  '/assets/mountain-3.png',
-  '/assets/mountain-2.png',
-  '/assets/mountain-1.png'
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327132/portfolio_projects/dz3yugk13qxxza1xhsa3.png", // grid.png
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327130/portfolio_projects/rko34uiizzdgag5rhken.jpg", // sky.jpg
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327124/portfolio_projects/yvjc8grnbt2mtmztxghb.png", // particles-bg.png
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327125/portfolio_projects/rneot917hccnukrgnwjc.png", // planets.png
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327142/portfolio_projects/k3ikjrwgme9nqfnywfru.png", // coding-pov.png
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327122/portfolio_projects/naqioteif47haqiiwztc.png", // mountain-3.png
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327115/portfolio_projects/ftmjcmr7usgc3auakzxn.png", // mountain-2.png
+  "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327108/portfolio_projects/nfqi6tjrkz57fszzzv4r.png"  // mountain-1.png
 ];
 export const myProjects = [
   {
@@ -22,7 +22,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/mern-assistant.png",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326107/portfolio_projects/vysbsr6iejapqfc28otg.png",
     tags: [
       { id: 1, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
       { id: 2, name: "Express.js", path: "/assets/logos/express.svg" },
@@ -64,7 +64,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wanderlust.png",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326129/portfolio_projects/vvgabvfkmp7mlw0edjml.png",
     tags: [
       { id: 1, name: "Node", path: "/assets/logos/node.svg" },
       { id: 2, name: "Express", path: "/assets/logos/express.svg" },
@@ -85,7 +85,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/cynthia-clone.png",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326102/portfolio_projects/qrn7fhinj1vwlotzatzj.png",
     tags: [
       { id: 1, name: "HTML", path: "/assets/logos/html5.svg" },
       { id: 2, name: "CSS", path: "/assets/logos/css3.svg" },
@@ -105,12 +105,12 @@ export const myProjects = [
     ],
     href: "https://khilesh321.netlify.app",
     logo: "",
-    image: "/assets/projects/portfolio.png",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326113/portfolio_projects/rdhkctfs2vvrcctuevdh.png",
     tags: [
       { id: 1, name: "HTML", path: "/assets/logos/html5.svg" },
       { id: 2, name: "CSS", path: "/assets/logos/css3.svg" },
       { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
-      { id: 4, name: "Shery.js", path: "/assets/logos/sheryjs.png" },
+      { id: 4, name: "Shery.js", path: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327688/portfolio_projects/gm5axaetmjsmblgbkkoo.png" },
       { id: 5, name: "GSAP", path: "/assets/logos/gsap.svg" },
     ],
   },
@@ -128,7 +128,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/hr-management.png",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326104/portfolio_projects/cta2efgprj1qnd8wvvkc.png",
     tags: [
       { id: 1, name: "Python", path: "/assets/logos/python.svg" },
       { id: 2, name: "MongoDB", path: "/assets/logos/mongodb.svg" },

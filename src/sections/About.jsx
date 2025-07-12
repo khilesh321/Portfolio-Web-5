@@ -14,7 +14,7 @@ function About() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
         <div className="flex items-end relative grid-default-color grid-1">
-          <img src="assets/coding-pov.png" alt="coding image" className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"/>
+          <img src="https://res.cloudinary.com/dna4sajpg/image/upload/v1752327142/portfolio_projects/k3ikjrwgme9nqfnywfru.png" alt="coding image" className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"/>
           <div className="z-10">
           <p className="headtext">Hi, I'm Khilesh Jawale</p>
           <p className="subtext">Over the past year, I've built fast, scalable web apps with modern frontend and backend tools.</p>

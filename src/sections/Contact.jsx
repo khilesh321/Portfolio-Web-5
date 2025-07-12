@@ -66,7 +66,7 @@ const Contact = () => {
       <div
         className="absolute inset-0 -z-50"
         style={{
-          backgroundImage: `url('assets/particles-bg.png')`,
+          backgroundImage: `url('https://res.cloudinary.com/dna4sajpg/image/upload/v1752327124/portfolio_projects/yvjc8grnbt2mtmztxghb.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
