@@ -45,7 +45,7 @@ const WebsiteLoader = ({ children }) => {
           return new Promise((resolve) => {
             const img = new Image();
 img.onload = () => {
-  setProgress(prev => Math.max(prev, 60 + ((index + 1) / criticalAssets.length) * 25));
+  setProgress(prev => Math.max(prev, 60 + ((index + 1) / CRITICAL_ASSETS.length) * 25));
   resolve();
 };
             img.onerror = resolve; // Continue even if some assets fail
