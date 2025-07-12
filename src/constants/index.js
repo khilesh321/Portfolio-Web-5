@@ -66,8 +66,8 @@ export const myProjects = [
     logo: "",
     image: "/assets/projects/wanderlust.png",
     tags: [
-      { id: 1, name: "Node.js", path: "/assets/logos/node.svg" },
-      { id: 2, name: "Express.js", path: "/assets/logos/express.svg" },
+      { id: 1, name: "Node", path: "/assets/logos/node.svg" },
+      { id: 2, name: "Express", path: "/assets/logos/express.svg" },
       { id: 3, name: "EJS", path: "/assets/logos/ejs.svg" },
       { id: 4, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
       { id: 5, name: "Bootstrap", path: "/assets/logos/bootstrap.svg" },

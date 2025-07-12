@@ -10,7 +10,7 @@ function Project({title, description, subDescription, href, image, tags, setPrev
     >
       <div>
         <p className="text-2xl">{title}</p>
-        <div className="flex gap-5 mt-2 text-sand">
+        <div className="flex flex-wrap gap-4 mt-2 text-sand">
           {tags.map(tag => <span key={tag.id}>{tag.name}</span>)}
         </div>
       </div>
