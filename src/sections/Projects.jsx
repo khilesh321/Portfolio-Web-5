@@ -25,13 +25,13 @@ function Projects() {
         {preview && !isSmallScreen && (
           <motion.img 
             key={preview}
-            className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg ring-2 ring-neutral-500 pointer-events-none"
+            className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg pointer-events-none"
             style={{x: springX, y: springY}}
             src={preview}
             alt="preview image"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.8, boxShadow: "0 0 0 0 #737373" }}
+            animate={{ opacity: 1, scale: 1, boxShadow: "0 0 0 2px #737373" }}
+            exit={{ opacity: 0, scale: 0.8, boxShadow: "0 0 0 0 #737373" }}
             transition={{ 
               duration: 0.2, 
               ease: "easeInOut"
