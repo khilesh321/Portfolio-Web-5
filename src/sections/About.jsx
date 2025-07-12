@@ -1,6 +1,9 @@
-import { useRef } from "react"
+import { useRef, lazy, Suspense } from "react"
 import Card from "../components/Card"
-import { Globe } from "../components/Globe";
+// Lazy load the Globe component to improve initial load time
+const Globe = lazy(() => import("../components/Globe").then(module => ({
+  default: module.Globe
+})));
 import CopyEmailButton from "../components/CopyEmailButton";
 import {Frameworks} from "../components/Frameworks";
 function About() {
@@ -36,8 +39,10 @@ function About() {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">I'm based in India, and open to remote work worldwide.</p>
-            <figure className="absolute left-[30%] top-[10%]">
-              <Globe />
+            <figure className="absolute left-[60%] -top-[0%] scale-190">
+              <Suspense fallback={<div className="size-full flex items-center justify-center">Loading...</div>}>
+                <Globe />
+              </Suspense>
             </figure>
           </div>
         </div>
