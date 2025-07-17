@@ -179,17 +179,18 @@ export const experiences = [
     ],
   },
   {
-    title: "Freelance Web Developer",
-    job: "Self-Employed",
+    title: "B.Tech Student (2nd Year)",
+    job: "IT, Govt. College of Engg., Chhatrapati Sambhajinagar",
     date: "2025–Present",
     contents: [
-      "Built responsive websites using React, TailwindCSS, and Vite with modern UI and smooth performance.",
-      "Deployed projects on Netlify and GitHub Pages with clean version control using Git.",
-      "Used Flexbox, Grid, and reusable components to ensure mobile-first, scalable designs.",
-      "Communicated with clients for requirement gathering and timely project delivery.",
-      "Currently exploring Three.js to integrate 3D visuals in future web projects.",
+      "Pursuing B.Tech in Information Technology with strong focus on coding, development, and computer science fundamentals.",
+      "Working on real-world tech projects alongside academics to strengthen practical skills in Python and web technologies.",
+      "Passionate about AI, full-stack development, and automation, with a keen interest in learning beyond the classroom.",
+      "Enhancing technical, analytical, and communication skills through projects, workshops, and self-learning.",
+      "Building an industry-ready profile by combining academic excellence with hands-on experience.",
     ],
   },
+
 ];
 
 
