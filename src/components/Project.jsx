@@ -1,10 +1,33 @@
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import ProjectDetails from "./ProjectDetails"
 
 function Project({title, description, subDescription, href, image, tags, setPreview}) {
-  const [isHidden, setIsHidden] = useState(false)
+  const [isHidden, setIsHidden] = useState(false);
+  const projectRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          setPreview(null);
+        }
+      },
+      { threshold: 0 }
+    );
+
+    if (projectRef.current) {
+      observer.observe(projectRef.current);
+    }
+
+    return () => {
+      if (projectRef.current) {
+        observer.unobserve(projectRef.current);
+      }
+    };
+  }, [setPreview]);
+
   return (<>
-    <div className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
+    <div ref={projectRef} className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
       onMouseMove={() => setPreview(image)}
       onMouseLeave={() => setPreview(null)}
     >
