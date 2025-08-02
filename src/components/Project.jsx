@@ -28,7 +28,7 @@ function Project({title, description, subDescription, href, image, tags, setPrev
 
   return (<>
     <div ref={projectRef} className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-      onMouseEnter={() => setPreview(image)}
+      onMouseMove={() => setPreview(image)}
       onMouseLeave={() => setPreview(null)}
     >
       <div>
