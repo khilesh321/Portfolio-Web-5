@@ -8,9 +8,34 @@ export const CRITICAL_ASSETS = [
   "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327115/portfolio_projects/ftmjcmr7usgc3auakzxn.png", // mountain-2.png
   "https://res.cloudinary.com/dna4sajpg/image/upload/v1752327108/portfolio_projects/nfqi6tjrkz57fszzzv4r.png"  // mountain-1.png
 ];
+
 export const myProjects = [
   {
-    id: 1,
+    id: 7,
+    title: "Artifinity Ai - Where Imagination Meets Intelligence",
+    description:
+      "A SaaS AI platform built with the MERN stack that empowers users with AI tools for content creation, image generation, and resume review, while integrating a public community showcase.",
+    subDescription: [
+      "Developed using MongoDB, Express, React, and Node.js with Clerk for secure authentication and billing.",
+      "Includes AI tools to write articles, generate blog titles, create images, remove background/objects, and review resumes.",
+      "Features a public community section to explore shared user-generated images.",
+      "Used Framer Motion and Lenis for smooth animation and scrolling; Tailwind CSS for design consistency.",
+    ],
+    href: "https://artifinity-ai.vercel.app/",
+    logo: "",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1754115620/Screenshot_97_fewfgn.png",
+    tags: [
+      { id: 1, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 2, name: "Express", path: "/assets/logos/express.svg" },
+      { id: 3, name: "React", path: "/assets/logos/react.svg" },
+      { id: 4, name: "Node.js", path: "/assets/logos/node.svg" },
+      { id: 5, name: "Clerk", path: "/assets/logos/clerk.png" },
+      { id: 6, name: "Framer Motion", path: "/assets/logos/framer-motion.svg" },
+      { id: 7, name: "Lenis", path: "https://lenis.darkroom.engineering/android-chrome-512x512.png" },
+    ],
+  },
+  {
+    id: 6,
     title: "Virtual Assistant (MERN Stack)",
     description:
       "A fully functional virtual assistant built using the MERN stack, featuring secure user authentication and deep customization options.",
@@ -20,7 +45,7 @@ export const myProjects = [
       "Used React hooks for dynamic frontend interactions and state management.",
       "Scalable backend architecture built with Express and MongoDB for storing user preferences and logs.",
     ],
-    href: "",
+    href: "https://virtual-assistant-ca86.onrender.com/",
     logo: "",
     image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326107/portfolio_projects/vysbsr6iejapqfc28otg.png",
     tags: [
@@ -31,7 +56,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: "C.H.E.T.A.N.A - AI Virtual Assistant",
     description:
       "An intelligent voice-controlled AI assistant built with Python, designed to automate tasks and assist users like Jarvis.",
@@ -51,30 +76,30 @@ export const myProjects = [
       { id: 3, name: "Hugging Face", path: "/assets/logos/huggingface.svg" },
     ],
   },
+  // {
+  //   id: 4,
+  //   title: "Wanderlust - Travel Stay Booking App",
+  //   description:
+  //     "A compact full-stack web app inspired by Airbnb, built using Node.js, Express, EJS, and MongoDB for listing and booking travel stays.",
+  //   subDescription: [
+  //     "Created a responsive and dynamic UI using EJS templating and Bootstrap for layout and components.",
+  //     "Implemented full CRUD features for listing stays, and review system.",
+  //     "Used MongoDB as the backend database for storing user info, stay details, and reviews.",
+  //     "Integrated RESTful routing, flash messages, and error handling for smooth UX.",
+  //   ],
+  //   href: "",
+  //   logo: "",
+  //   image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326129/portfolio_projects/vvgabvfkmp7mlw0edjml.png",
+  //   tags: [
+  //     { id: 1, name: "Node", path: "/assets/logos/node.svg" },
+  //     { id: 2, name: "Express", path: "/assets/logos/express.svg" },
+  //     { id: 3, name: "EJS", path: "/assets/logos/ejs.svg" },
+  //     { id: 4, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+  //     { id: 5, name: "Bootstrap", path: "/assets/logos/bootstrap.svg" },
+  //   ],
+  // },
   {
     id: 3,
-    title: "Wanderlust - Travel Stay Booking App",
-    description:
-      "A compact full-stack web app inspired by Airbnb, built using Node.js, Express, EJS, and MongoDB for listing and booking travel stays.",
-    subDescription: [
-      "Created a responsive and dynamic UI using EJS templating and Bootstrap for layout and components.",
-      "Implemented full CRUD features for listing stays, and review system.",
-      "Used MongoDB as the backend database for storing user info, stay details, and reviews.",
-      "Integrated RESTful routing, flash messages, and error handling for smooth UX.",
-    ],
-    href: "",
-    logo: "",
-    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326129/portfolio_projects/vvgabvfkmp7mlw0edjml.png",
-    tags: [
-      { id: 1, name: "Node", path: "/assets/logos/node.svg" },
-      { id: 2, name: "Express", path: "/assets/logos/express.svg" },
-      { id: 3, name: "EJS", path: "/assets/logos/ejs.svg" },
-      { id: 4, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
-      { id: 5, name: "Bootstrap", path: "/assets/logos/bootstrap.svg" },
-    ],
-  },
-  {
-    id: 4,
     title: "Cynthia Ugwu Website Clone",
     description:
       "A pixel-perfect clone of Cynthia Ugwu’s portfolio website built using only HTML, CSS, and JavaScript to replicate her unique interactive design style.",
@@ -83,7 +108,7 @@ export const myProjects = [
       "Implemented custom cursor effects and dynamic image hover features using vanilla JavaScript.",
       "Focused on performance and design accuracy to closely mirror the original experience.",
     ],
-    href: "",
+    href: "https://magenta-rolypoly-21a5fc.netlify.app/",
     logo: "",
     image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326102/portfolio_projects/qrn7fhinj1vwlotzatzj.png",
     tags: [
@@ -93,7 +118,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 2,
     title: "Personal Developer Portfolio Website",
     description:
       "An interactive and SEO-friendly portfolio website built using pure HTML, CSS, and JavaScript to showcase projects and engage users with immersive UI.",
@@ -115,7 +140,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 1,
     title: "HR Management System (Desktop App)",
     description:
       "A GUI-based HR Management System built using Python and CustomTkinter, designed to handle employee records, attendance, salary, and leave management.",
@@ -135,6 +160,8 @@ export const myProjects = [
     ],
   },
 ];
+
+
 
 
 export const mySocials = [

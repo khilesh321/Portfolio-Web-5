@@ -22,7 +22,7 @@ function ProjectDetails({title, description, subDescription, image, tags, href, 
             <div className="flex gap-3">
               {tags.map(tag => <img key={tag.id} src={tag.path} alt={tag.name} className="rounded-lg size-10 hover:animation" />)}
             </div>
-            <a href={href} className="inline-flex items-center gap-1 font-medium hover:animation cursor-pointer">
+            <a href={href} target="_blank" className="inline-flex items-center gap-1 font-medium hover:animation cursor-pointer">
               View Project
               <img src="assets/arrow-up.svg" alt="arrow icon" className="size-4" />
             </a>
