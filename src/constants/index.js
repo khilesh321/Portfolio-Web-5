@@ -68,36 +68,13 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image:
-      "https://images.unsplash.com/photo-1730567695200-7c8df5931fe0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1730567695200-7c8df5931fe0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D",
     tags: [
       { id: 1, name: "Python", path: "/assets/logos/python.svg" },
       { id: 2, name: "Groq AI", path: "/assets/logos/groq.svg" },
       { id: 3, name: "Hugging Face", path: "/assets/logos/huggingface.svg" },
     ],
   },
-  // {
-  //   id: 4,
-  //   title: "Wanderlust - Travel Stay Booking App",
-  //   description:
-  //     "A compact full-stack web app inspired by Airbnb, built using Node.js, Express, EJS, and MongoDB for listing and booking travel stays.",
-  //   subDescription: [
-  //     "Created a responsive and dynamic UI using EJS templating and Bootstrap for layout and components.",
-  //     "Implemented full CRUD features for listing stays, and review system.",
-  //     "Used MongoDB as the backend database for storing user info, stay details, and reviews.",
-  //     "Integrated RESTful routing, flash messages, and error handling for smooth UX.",
-  //   ],
-  //   href: "",
-  //   logo: "",
-  //   image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326129/portfolio_projects/vvgabvfkmp7mlw0edjml.png",
-  //   tags: [
-  //     { id: 1, name: "Node", path: "/assets/logos/node.svg" },
-  //     { id: 2, name: "Express", path: "/assets/logos/express.svg" },
-  //     { id: 3, name: "EJS", path: "/assets/logos/ejs.svg" },
-  //     { id: 4, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
-  //     { id: 5, name: "Bootstrap", path: "/assets/logos/bootstrap.svg" },
-  //   ],
-  // },
   {
     id: 3,
     title: "Cynthia Ugwu Website Clone",
@@ -159,9 +136,24 @@ export const myProjects = [
       { id: 2, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
     ],
   },
+  {
+    id: 0,
+    title: "Tic Tac Toe Game (GUI)",
+    description:
+      "A classic two-player Tic Tac Toe game built with Python, featuring a graphical user interface (GUI) for an enhanced user experience.",
+    subDescription: [
+      "Developed using Python with CustomTkinter for the GUI components.",
+      "Implements player turns, win condition checks, draw detection, and restart prompt.",
+      "Great for understanding conditionals, loops, and function-based structure in Python.",
+    ],
+    href: "",
+    logo: "",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1754122590/Screenshot_98_snuesd.png",
+    tags: [
+      { id: 1, name: "Python", path: "/assets/logos/python.svg" },
+    ],
+  },
 ];
-
-
 
 
 export const mySocials = [
