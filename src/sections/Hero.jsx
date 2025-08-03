@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section id="home" className="flex items-start justify-center md:justify-start min-h-screen overflow-hidden c-space">
       <HeroText />
-      <figure className="absolute inset-0 z-10" style={{width: '100vw', height: '100vh'}}>
+      <figure className={`absolute inset-0 ${!isMobile ? 'z-10' : 'z-0'}`} style={{width: '100vw', height: '100vh'}}>
         <Canvas camera={{position: [0,1,3]}}>
           <Suspense fallback={<Loader />}>
             <Float>
