@@ -26,7 +26,7 @@ function Projects() {
         {preview && !isSmallScreen && (
           <motion.img 
             key={preview}
-            className="fixed top-0 left-0 z-50 object-cover h-56 rounded-lg pointer-events-none"
+            className="fixed top-0 left-0 z-40 object-cover h-56 rounded-lg pointer-events-none"
             style={{x: springX, y: springY}}
             src={preview}
             alt="preview image"
