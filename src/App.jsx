@@ -8,6 +8,8 @@ import Navbar from './sections/Navbar'
 import Projects from './sections/Projects'
 import Testimonial from './sections/Testimonial'
 import WebsiteLoader from './components/WebsiteLoader'
+import Certifications from './components/Certifications';
+import { certificateData } from './constants';
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
         <ParallaxBackground />
         <About />
         <Projects />
+        <Certifications certificates={certificateData} />
         <Experiences />
         {/* <Testimonial /> */}
         <Contact />

@@ -156,6 +156,37 @@ export const myProjects = [
   },
 ];
 
+export const certificateData = [
+  {
+    id: 1,
+    title: "Python Internship – IIT Kharagpur (expected soon)",
+    organization: "IIT Kharagpur",
+    description: "A summer internship focused on building a GUI-based HR system using Python and MongoDB.",
+    href: "https://media.gettyimages.com/id/1469238026/video/4k-glowing-blue-neon-text-coming-soon.jpg?s=640x640&k=20&c=pogVqRtNDrGqG3pXNUTleBV47Cf0yPXtburiEc7ZPck=",
+  },
+  {
+    id: 2,
+    title: "Java Programming – Certification of Completion",
+    organization: 'Knowledge Gate',
+    description: "A comprehensive course covering core Java concepts, OOP principles, and basic data structures",
+    href: 'https://res.cloudinary.com/dna4sajpg/image/upload/v1754585940/Screenshot_2025-08-07_194846_sx4vlc.png',
+  },
+  {
+    id: 3,
+    title: "Ode to Code – Wings 2025",
+    organization: 'Gov. College of Engineering, Chh. Sambhajinagar',
+    description: "A competitive coding event testing algorithmic and logical thinking under time constraints.",
+    href: 'https://res.cloudinary.com/dna4sajpg/image/upload/v1754587461/WhatsApp_Image_2025-08-07_at_22.53.54_7c855ac9_jpq5h5.jpg',
+  },
+  {
+    id: 4,
+    title: "Personality Development Club – Active Member",
+    organization: 'Gov. College of Engineering, Chh. Sambhajinagar',
+    description: "Participated in sessions focused on communication, confidence, and soft skill building.",
+    href: 'https://res.cloudinary.com/dna4sajpg/image/upload/v1754587478/WhatsApp_Image_2025-08-07_at_22.53.54_a0449ec7_ipiqu5.jpg',
+  },
+]
+
 
 export const mySocials = [
   {
