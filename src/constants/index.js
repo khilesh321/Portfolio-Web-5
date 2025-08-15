@@ -78,21 +78,22 @@ export const myProjects = [
   },
   {
     id: 3,
-    title: "Cynthia Ugwu Website Clone",
+    title: "Brainly – Second Brain",
     description:
-      "A pixel-perfect clone of Cynthia Ugwu’s portfolio website built using only HTML, CSS, and JavaScript to replicate her unique interactive design style.",
+      "A modern knowledge management platform that lets you store, organize, and share all your ideas, links, and resources in one intelligent space.",
     subDescription: [
-      "Recreated smooth scroll, hover animations, and creative transitions without any external frameworks.",
-      "Implemented custom cursor effects and dynamic image hover features using vanilla JavaScript.",
-      "Focused on performance and design accuracy to closely mirror the original experience.",
+      "Built with Vite + React + TypeScript for the frontend and TypeScript-based backend.",
+      "Supports embedding YouTube videos, X (Twitter) posts, and any other links by simply pasting the URL.",
+      "Includes smart notes, quick filters, and search functionality for easy navigation.",
+      "Allows users to share their curated 'brain' with others for collaboration.",
+      "Designed with a minimal, responsive UI and optimized performance for fast loading.",
     ],
-    href: "https://magenta-rolypoly-21a5fc.netlify.app/",
+    href: "https://brainly-second-brain.vercel.app/",
     logo: "",
-    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1752326102/portfolio_projects/qrn7fhinj1vwlotzatzj.png",
+    image: "https://res.cloudinary.com/dna4sajpg/image/upload/v1755267307/Screenshot_111_vw3z2g.png",
     tags: [
-      { id: 1, name: "HTML", path: "/assets/logos/html5.svg" },
-      { id: 2, name: "CSS", path: "/assets/logos/css3.svg" },
-      { id: 3, name: "JavaScript", path: "/assets/logos/javascript.svg" },
+      { id: 1, name: "MERN", path: "https://www.rlogical.com/wp-content/uploads/2024/05/mern-stack-development.webp" },
+      { id: 3, name: "TypeScript", path: "/assets/logos/typescript.svg" },
     ],
   },
   {
