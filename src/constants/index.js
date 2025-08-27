@@ -160,10 +160,10 @@ export const myProjects = [
 export const certificateData = [
   {
     id: 1,
-    title: "Python Internship – IIT Kharagpur (expected soon)",
+    title: "Python Internship – IIT Kharagpur",
     organization: "IIT Kharagpur",
     description: "A summer internship focused on building a GUI-based HR system using Python and MongoDB.",
-    href: "https://media.gettyimages.com/id/1469238026/video/4k-glowing-blue-neon-text-coming-soon.jpg?s=640x640&k=20&c=pogVqRtNDrGqG3pXNUTleBV47Cf0yPXtburiEc7ZPck=",
+    href: "https://res.cloudinary.com/dna4sajpg/image/upload/v1756204866/WhatsApp_Image_2025-08-26_at_16.08.17_aa5752cd_yi9hy1.jpg",
   },
   {
     id: 2,
